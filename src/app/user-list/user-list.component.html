@@ -1,0 +1,26 @@
+<div class="container-fluid col-11">
+    <h1 class="display-1">All Registred Users</h1>
+    <table class="table table-dark table-striped mt-4">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date of Birth</th>
+                <th>Phone Number</th>
+                <th>EDIT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.userId}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.national_Id}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.phoneNumber}}</td>
+                <td>{{user.dateOfBirth | date}}</td>
+               
+            </tr>
+        </tbody>
+    </table>
+</div>
